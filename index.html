@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhada ao supermercado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <main>
+
+        <!-- Passo A-->
+        <div class="passo ativo" id="passo-A">
+
+            <img src="apartamento-A.png" alt="">
+
+            <p>
+                Em uma bela manhã, você decide tomar um café com leite para se energizar e começar seu dia com o pé direito. Você começa a preparar o seu café, faz um pão com manteiga e quando menos esperava, repara que não há mais leite na sua geladeira! inaceitável, você não vai deixar esse dia ser arruinado pela falta de leite, e parte ao supermercado para comprar mais.
+            </p>
+
+            <!--A1-->
+            <button class="btn-proximo" data-proximo="B">
+                Ir ao mercado
+            </button>
+
+        </div>
+
+        <!-- Passo B-->
+        <div class="passo" id="passo-B">
+
+            <p>
+                Ao sair de casa, você se depara com um lugar diferente do normal, a rua que você estava acostumado parece estar totalmente diferente, os dois lados da rua estão cercados de prédios gigantes com grandes antenas ao seu topo. Onde você foi parar?!
+            </p>
+            
+            <!--B3-->
+            <button class="btn-proximo" data-proximo="P">
+                Voltar para dentro de casa
+            </button>
+
+            <!--B1-->
+            <button class="btn-proximo" data-proximo="C">
+                Seguir a rua
+            </button>
+
+            <!--B2-->
+            <button class="btn-proximo" data-proximo="K">
+                Entrar em um dos prédios
+            </button>
+        </div>
+
+        <!-- Passo C-->
+        <div class="passo" id="passo-C">
+            <p>Você segue a rua, ela parece se estender infinitamente, nunca tendo um fim a vista. Após alguns minutos andando, você se depara com uma pequena brecha entre os grandes prédios, ao entrar dentro dela você dá de cara com várias escadas espalhadas pelo que parece ser um abismo, dentre as escadas três coisas te chamam a atenção: Uma estrutura gigante, uma conexão a um buraco na parede e algumas escadas que parecem se estender ao fundo do abismo.</p>
+
+             <!--C1-->
+             <button class="btn-proximo" data-proximo="D">
+                Seguir até o fundo
+            </button>
+
+            <!--C2-->
+            <button class="btn-proximo" data-proximo="E">
+                Investigar a estrutura
+            </button>
+
+            <!--C3-->
+            <button class="btn-proximo" data-proximo="F">
+                Entrar dentro da parede
+            </button>
+
+        </div>
+
+        <!-- Passo D-->
+        <div class="passo" id="passo-D">
+            <p>Seguindo as escadas até o fundo, você chega a uma parte onde as escadas param de se estender, como se estivessem quebradas. Mais fundo ao abismo, você consegue enxergar grandes aranhas, vestindo ternos e vestidos de seda, tecendo grandes prédios e complexas estradas com suas teias. A vista é linda, mas não há mais nada para você aqui.</p>
+
+            <!-- D1!-->
+            <button class="btn-proximo" data-proximo="C">
+                Voltar
+            </button>
+
+        </div>
+
+        <!-- Passo E-->
+        <div class="passo" id="passo-E"> 
+            <p> Você entra na estrutura. Dentro dela há apenas oque parece ser uma pequena loja, várias estantes se estendem na parede mostrando diversas máscaras que só podem ser descritas como bizzaras, um homem, o dono da loja, percebe seu interesse e chama sua atenção. Ele está vestindo uma roupa formal, interessantemente, ele não parece ter uma cabeça, e usa uma de suas máscaras para preencher o vazio que seria ela. Ele te ofereçe, com gestos, duas das máscaras que ele tem em estoque, por conta da casa. Que gentileza! Seria uma falta de educação recusar. </p>
+
+            <!-- E1 -->
+            <button class="btn-proximo" data-proximo="I">
+                Colocar a máscara de... lobo? Você não tem certeza.
+            </button>
+
+            <!--E2-->
+            <button class="btn-proximo" data-proximo="J">
+                Colocar a máscara de ferro. Nâo parece muito comfortável...
+            </button>
+
+        </div>
+
+        <!-- Passo F-->
+        <div class="passo" id="passo-F"> 
+            <p>Você chega a uma espécie de metro, a linha do trem se estende até o final do estranho túnel e várias sombras esperam sua chegada, sem dar muita atençâo a você, ao longo da linha do trem várias portas metálicas estâo presentes. Sua investigação, porém, foi interrompida com a ALTA chegada do trem.</p>
+
+            <!-- F1 -->
+            <button class="btn-proximo" data-proximo="G">
+                Embarcar no trem junto as sombras
+            </button>
+
+            <!--F2-->
+            <button class="btn-proximo" data-proximo="J">
+                Entrar em umas das misteriosas portas
+            </button>
+
+        </div>
+
+        <!-- Passo G-->
+        <div class="passo" id="passo-G">
+            <p>Você acaba em uma cidade extremamente brilhante, luzes e placas de LED podem ser vistas em cada lugar que você pode olhar e grandes fios estendem entre os prédios da cidade inteira. Demora alguns momentos para sua visão se ajustar, mas quando ela se ajusta, você se depara com uma loja de conveniência! Talvez eles tenham leite?</p>
+
+            <!-- G1 -->
+            <button class="btn-proximo" data-proximo="H">
+                Ir a loja
+            </button>
+
+        </div>
+
+        <!-- Passo H-->
+        <div class="passo" id="passo-H">
+            <p>Você entra na loja, ela parece ser incrivelmente... normal? Felizmente eles tinham sim leite! você pega o leite e corre até o caixa para pagar e... você esqueceu sua carteira em casa.</p>
+            <!-- H1 -->
+            <button class="btn-proximo" data-proximo="A">
+                volte derrotado(a) a seu apartamento
+            </button>
+
+        </div>
+
+        <!-- Passo I-->
+        <div class="passo" id="passo-I">
+        <p>Você coloca a máscara e vê uma floresta, assustado pela repentina mudança de cenário, você tenta tirar a máscara, porém ela não está mais em seu rosto. Grandes e densas árvores bloqueiam sua visão a todos os lados, deixando visivel apenas uma distante luz aos céus</p>
+
+            <!-- I1 -->
+            <button class="btn-proximo" data-proximo="R">
+                Seguir seus instintos
+            </button>
+
+            <!-- I2 -->
+            <button class="btn-proximo" data-proximo="G">
+                Seguir as luzes
+            </button>
+
+        </div>
+
+        <!-- Passo J-->
+        <div class="passo" id="passo-J">
+        <p>Fumaça encobre sua cara, e você acaba em uma velha, enferrujada fábrica, fumaça sai de suas grandes chaminés e os finos andaimes utilizados para conectar áreas da fábrica dificulta a locomoção.</p>
+
+            <!-- J1 -->
+            <button class="btn-proximo" data-proximo="Q">
+                Entrar dentro da fábrica
+            </button>
+
+            <!-- J2 -->
+            <button class="btn-proximo" data-proximo="G">
+                Procurar a saída
+            </button>
+
+        </div>
+
+        <!-- Passo K -->
+        <div class="passo" id="passo-K">
+        <p>Você percebe que um dos prédios tem uma entrada, iluminada por luzes piscantes e setas apontando para dentro, você decide entrar. Ao entrar, você acaba em uma praia, habitada por pessoas com cara de peixe, bizarro. Você vê a distancia uma grande baleia sendo utilizada como uma espécie de balão e ao seu lado uma grande escada que leva ao subterrâneo.</p>
+
+        <!-- K1 -->
+        <button class="btn-proximo" data-proximo="L">
+        Embarcar na baleia
+        </button>
+            
+        <!-- K2 -->
+        <button class="btn-proximo" data-proximo="M">
+        Descer as escadas
+        </button>
+            
+        </div>
+
+        <!-- Passo L -->
+        <div class="passo" id="passo-L">
+        <p>Você voa junto a baleia até os ares, onde uma grande escotilha se abre e revela um shopping center nos céus. Você passa algum tempo explorando tudo que aquele lugar tem a oferecer, porém nenhum dos peixes parece te entender e a comida não parece ser muito boa... Você encontra alguns peixes entrando em um trem e decide se juntar a eles.</p>
+
+        <!-- L1 -->
+        <button class="btn-proximo" data-proximo="G">
+        Entrar no trem
+        </button>
+                        
+        </div>
+
+        <!-- Passo M -->
+        <div class="passo" id="passo-M">
+        <p>Você desce as escadas. Uma escuridão envolve você. Você enventualmente encontra uma porta, quando ela se abre você se depara com uma... boate de peixes?!</p> 
+           
+        <!-- M1 -->
+        <button class="btn-proximo" data-proximo="S">
+        Dançar com os peixes
+        </button>
+                
+        <!-- M2 -->
+        <button class="btn-proximo" data-proximo="O">
+        Ir aos fundos da boate
+        </button>
+
+        <!-- M3 -->
+        <button class="btn-proximo" data-proximo="N">
+        Entrar em um estranho submarino no meio da boate
+        </button>
+                
+        </div>
+
+        <!-- Passo N -->
+        <div class="passo" id="passo-N">
+        <p>Você acaba no fundo do mar, estranhamente você ainda consegue respirar. Algas e crustaceos te rodeiam enquanto você anda pelo oceano, até que você acaba encontrando um cano industrial. </p>                 
+
+        <!-- N1 -->
+        <button class="btn-proximo" data-proximo="J">
+        entrar no cano
+        </button>
+                                           
+        </div>
+
+        <!-- Passo O -->
+        <div class="passo" id="passo-O">
+        <p>Você se encontra em um pier, grandes e finas figuras se sentam nas bordas para pescar, e uma atmosfera calma envolve o lugar.</p>
+
+        <!-- O1 -->
+        <button class="btn-proximo" data-proximo="N">
+        Pular dentro do mar
+        </button>
+
+        <!-- O2 -->
+        <button class="btn-proximo" data-proximo="E">
+        Entrar em uma casa ao fundo do pier
+        </button>
+                                       
+        </div>
+
+        <!-- Passo P -->
+        <div class="passo" id="passo-P">
+        <p>Você tenta voltar, mas a porta nâo está mais lá</p>
+
+        <!-- P1 -->
+        <button class="btn-proximo" data-proximo="B">
+        Voltar
+        </button>
+                                                   
+        </div>
+
+        <!-- Passo Q -->
+        <div class="passo" id="passo-Q">
+        <p>Você entra na fábrica, pequenos robôs trabalham em bugigangas complicadas, e coisos complexos.</p>
+            
+        <!-- Q1 -->
+        <button class="btn-proximo" data-proximo="J">
+        Voltar
+        </button>
+                                                               
+        </div>
+
+        <!-- Passo R -->
+        <div class="passo" id="passo-R">
+        <p>Você tenta seguir seus instintos, que não te levam a lugar algum...</p>
+            
+        <!-- R1 -->
+        <button class="btn-proximo" data-proximo="I">
+        Voltar
+        </button>
+                                                               
+        </div>
+
+        <!-- Passo S -->
+        <div class="passo" id="passo-S">
+        <p>Você dança com os peixes. Foi divertido.</p>
+            
+        <!-- S1 -->
+        <button class="btn-proximo" data-proximo="M">
+        Voltar
+        </button>
+                                                               
+        </div>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+
+
+</html>
